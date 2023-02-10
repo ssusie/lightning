@@ -142,7 +142,7 @@ def test_import_pytorch_lightning_with_torch_dist_unavailable():
 
         torch.distributed.is_available = lambda: False
 
-        import lightning.pytorch
+        import lightning
         """
     )
     # run in complete isolation
