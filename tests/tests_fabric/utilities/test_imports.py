@@ -31,7 +31,7 @@ def test_import_fabric_with_torch_dist_unavailable():
 
         torch.distributed.is_available = lambda: False
 
-        import lightning
+        import lightning.fabric
         """
     )
     # run in complete isolation
