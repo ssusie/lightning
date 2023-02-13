@@ -158,8 +158,8 @@ def _parse_tpu_devices(devices: Optional[Union[int, str, List[int]]]) -> Optiona
 
 
 def _tpu_devices_valid(devices: Any) -> bool:
-    # allow 1 or 8 cores
-    if devices in (1, 8, None):
+    # allow 1, 4 or 8 cores
+    if devices in (1, 4, 8, None):
         return True
 
     # allow picking 1 of 8 indexes
